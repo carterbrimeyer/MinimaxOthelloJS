@@ -1,0 +1,47 @@
+<style>
+  body {background-color: rgb(159, 174, 178);}
+  h1   {color: rgb(230, 230, 230)}
+  td    {color: rgb(235, 214, 139);
+         width: 40px;
+        font-size:xx-large;}
+  .center {
+  border: 5px solid;
+  display: flex;
+  justify-content: center;
+  }
+  .black {
+    color: black;
+  }
+  .white {
+    color: white;
+  }
+  .picked {
+    color: orange;
+    width: 40px;
+    font-size:xx-large;
+  }
+  .playerBest {
+    color: green;
+    width: 40px;
+    font-size:xx-large;
+  }
+  .desctext {
+    justify-content: center;
+    display: flex;
+  }
+  </style>
+<h1 class="center">Othello</h1>
+<div id="score" class="center"><h2>Score</h2></div>
+
+<div id="grid" class="center"></div>
+<script src="piece.js"></script>
+<script src="move.js"></script>
+<script src="ui.js"></script>
+<script src="ai.js"></script>
+<script src="game.js"></script>
+<script>
+let game = new othello(8, 4);
+</script>
+<div id = "banner" class="center"></div>
+<p class = "desctext">Simply choose click on a valid move on the grid to play. The AI is the white player. The green tile is what the algorithim determines to be your best move.</p>
+<p align ="center"><button id="replayButton" type="button" onclick="restartGame(game);" hidden>Play Again</button></p>
