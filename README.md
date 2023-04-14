@@ -8,4 +8,5 @@ The current board evaluation is altevaluateBoard(board, isPlayerTurn) which chec
 ## Using the code
 
 -Simply launch othello.html in a browser
--Click on the yellow hashtags to play Othello. Green hashtags will appear to show you what the AI would pick.
+
+-Click on the gold squares to play Othello. Green squares will appear to show you what artificial intelligence believes to be the best move. It is set to depth 4 by default
